@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+}
+.container {
+    padding: 20px;
+    background-color: #fff;
+    margin-top: 20px;
+}
+.score {
+    float: right;
+    font-weight: bold;
+}
+.high-scores {
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 20px;
+}
+.initials-input {
+    margin-top: 10px;
+}
+.high-scores-list {
+    list-style-type: none;
+    padding: 0;
+}
+.high-scores-list li {
+    margin-bottom: 10px;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Multiple Choice Quiz</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="assets/style.css">
+    <audio id="correctSound" src="sfx/correct.wav"></audio>
+    <audio id="incorrectSound" src="sfx/incorrect.wav"></audio>
+
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="question-card">
+          <div class="card-body">
+            <h5 class="card-title">Question <span id="question-number"></span></h5>
+            <p class="card-text" id="question-text"></p>
+            <form id="options-form">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="option" id="option1" value="">
+                <label class="form-check-label" for="option1" id="option1-label"></label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="option" id="option2" value="">
+                <label class="form-check-label" for="option2" id="option2-label"></label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="option" id="option3" value="">
+                <label class="form-check-label" for="option3" id="option3-label"></label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="option" id="option4" value="">
+                <label class="form-check-label" for="option4" id="option4-label"></label>
+              </div>
+            </form>
+            <div class="text-center">
+              <button type="button" class="btn btn-primary" id="submit-btn">Submit</button>
+            </div>
+          </div>
+        </div>
+        <div class="card d-none" id="result-card">
+          <div class="card-body">
+            <h5 class="card-title">Result</h5>
+            <p class="card-text">You scored <span id="score-value"></span> out of <span id="total-questions"></span>.</p>
+            <form>
+              <div class="form-group">
+                <label for="initials-input">Enter your initials:</label>
+                <input type="text" class="form-control" id="initials-input" maxlength="3">
+              </div>
+            </form>
+            <div class="text-center">
+              <button type="button" class="btn btn-primary" id="save-score-btn">Save Score</button>
+            </div>
+          </div>
+        </div>
+        <div class="card d-none" id="high-scores-card">
+          <div class="card-body">
+            <h5 class="card-title">High Scores</h5>
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Initials</th>
+                  <th scope="col">Score</th>
+                </tr>
+              </thead>
+              <tbody id="high-scores-body">
+              </tbody>
+            </table>
+            <div class="text-center">
+              <button type="button" class="btn btn-primary" id="go-back-btn">Go Back</button>
+              <button type="button" class="btn btn-primary" id="clear-scores-btn">Clear Scores</button>
+            </div>      
+	<div class="high-scores-container">
+		<div class="container">
+			<h2>High Scores</h2>
+			<ul class="high-scores-list"></ul>
+			<button class="clear-high-scores btn btn-danger">Clear High Scores</button>
+		</div>
+	</div>
+	<script src="assets/script.js"></script>
+</body>
+</html>
