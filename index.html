@@ -10,13 +10,16 @@
     <link rel="stylesheet" href="assets/style.css">
     <audio id="correctSound" src="sfx/correct.wav"></audio>
     <audio id="incorrectSound" src="sfx/incorrect.wav"></audio>
-
 </head>
 <body>
+  <div class="container">
+    <h1>Welcome to the Quiz!</h1>
+    <button type="button" class="btn btn-primary btn-lg">Start Quiz</button>
+  </div>
     <div class="container">
         <div class="card" id="question-card">
           <div class="card-body">
-            <h5 class="card-title">Question <span id="question-number"></span></h5>
+            <h5 class="card-title"><span id="question-number"></span></h5>
             <p class="card-text" id="question-text"></p>
             <form id="options-form">
               <div class="form-check">
