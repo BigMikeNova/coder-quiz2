@@ -1,89 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-	<title>Multiple Choice Quiz</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="assets/style.css">
-    <audio id="correctSound" src="sfx/correct.wav"></audio>
-    <audio id="incorrectSound" src="sfx/incorrect.wav"></audio>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Website</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link href="assets/style.css" rel="stylesheet">
 </head>
+
 <body>
   <div class="container">
-    <h1>Welcome to the Quiz!</h1>
-    <button type="button" class="btn btn-primary btn-lg">Start Quiz</button>
+    <div id="start-screen" class="text-center">
+      <h1>Coder Quiz</h1>
+      <button id="start-button" class="btn btn-primary mt-4">Start Quiz</button>
+    </div>
+    <div id="quiz" class="mt-4">
+      <!-- Questions and options will be dynamically generated here -->
+    </div>
+    <div id="result" class="mt-4">
+      <!-- Result will be displayed here -->
+    </div>
   </div>
-    <div class="container">
-        <div class="card" id="question-card">
-          <div class="card-body">
-            <h5 class="card-title"><span id="question-number"></span></h5>
-            <p class="card-text" id="question-text"></p>
-            <form id="options-form">
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="option" id="option1" value="">
-                <label class="form-check-label" for="option1" id="option1-label"></label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="option" id="option2" value="">
-                <label class="form-check-label" for="option2" id="option2-label"></label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="option" id="option3" value="">
-                <label class="form-check-label" for="option3" id="option3-label"></label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="option" id="option4" value="">
-                <label class="form-check-label" for="option4" id="option4-label"></label>
-              </div>
-            </form>
-            <div class="text-center">
-              <button type="button" class="btn btn-primary" id="submit-btn">Submit</button>
-            </div>
-          </div>
-        </div>
-        <div class="card d-none" id="result-card">
-          <div class="card-body">
-            <h5 class="card-title">Result</h5>
-            <p class="card-text">You scored <span id="score-value"></span> out of <span id="total-questions"></span>.</p>
-            <form>
-              <div class="form-group">
-                <label for="initials-input">Enter your initials:</label>
-                <input type="text" class="form-control" id="initials-input" maxlength="3">
-              </div>
-            </form>
-            <div class="text-center">
-              <button type="button" class="btn btn-primary" id="save-score-btn">Save Score</button>
-            </div>
-          </div>
-        </div>
-        <div class="card d-none" id="high-scores-card">
-          <div class="card-body">
-            <h5 class="card-title">High Scores</h5>
-            <table class="table table-striped">
-              <thead>
-                <tr>
-                  <th scope="col">#</th>
-                  <th scope="col">Initials</th>
-                  <th scope="col">Score</th>
-                </tr>
-              </thead>
-              <tbody id="high-scores-body">
-              </tbody>
-            </table>
-            <div class="text-center">
-              <button type="button" class="btn btn-primary" id="go-back-btn">Go Back</button>
-              <button type="button" class="btn btn-primary" id="clear-scores-btn">Clear Scores</button>
-            </div>      
-	<div class="high-scores-container">
-		<div class="container">
-			<h2>High Scores</h2>
-			<ul class="high-scores-list"></ul>
-			<button class="clear-high-scores btn btn-danger">Clear High Scores</button>
-		</div>
-	</div>
-	<script src="assets/script.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <script src="assets/script.js"></script>
 </body>
+
 </html>
