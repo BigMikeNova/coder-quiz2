@@ -2,104 +2,75 @@
 
 https://bigmikenova.github.io/coder-quiz2/
 
-![image](https://user-images.githubusercontent.com/125073452/231612816-0852754e-be5f-432e-b749-fa63679ec17c.png)
+![image](https://github.com/BigMikeNova/coder-quiz2/assets/125073452/099c10b6-3489-4073-ba9d-f41aae0cfd80)
+
+![image](https://github.com/BigMikeNova/coder-quiz2/assets/125073452/4941e4ea-969c-4beb-be9a-3a2174d9b195)
 
 
 
-## Your Task
 
-At some point in your journey to become a full-stack web developer, you’ll likely be asked to complete a coding assessment&mdash;perhaps as part of an interview process. A typical coding assessment includes both multiple-choice questions and interactive coding challenges. 
+# Quiz Website
 
-To help familiarize you with these tests and allow you to use the skills covered in this module, this Challenge invites you to build a timed coding quiz with multiple-choice questions. This app will run in the browser and will feature dynamically updated HTML and CSS powered by JavaScript code that you write. It will have a clean, polished, and responsive user interface. 
+The Quiz Website is a web application that allows users to take a quiz and test their knowledge on various topics. The website provides an interactive and engaging experience with the following functionality:
 
-This week’s coursework will equip you with all the skills you need to succeed in this assignment.
+## Features
 
-## User Story
+### 1. Multiple-choice Questions
 
-```
-AS A coding boot camp student
-I WANT to take a timed quiz on JavaScript fundamentals that stores high scores
-SO THAT I can gauge my progress compared to my peers
-```
+The quiz consists of a set of multiple-choice questions. Each question is displayed one at a time, and the user must select one option as their answer.
 
-## Acceptance Criteria
+### 2. Instant Feedback
 
-```
-GIVEN I am taking a code quiz
-WHEN I click the start button
-THEN a timer starts and I am presented with a question
-WHEN I answer a question
-THEN I am presented with another question
-WHEN I answer a question incorrectly
-THEN time is subtracted from the clock
-WHEN all questions are answered or the timer reaches 0
-THEN the game is over
-WHEN the game is over
-THEN I can save my initials and my score
-```
+Upon submitting an answer, the website provides instant feedback to the user. If the answer is correct, a success message is displayed, and a sound effect is played to indicate a correct answer. If the answer is incorrect, an error message is displayed, and a different sound effect is played.
 
-## Mock-Up
+### 3. Progress Tracking
 
-The following animation demonstrates the application functionality:
+The website tracks the user's progress through the quiz. The current question number and total number of questions are displayed to provide a sense of progress.
 
-![A user clicks through an interactive coding quiz, then enters initials to save the high score before resetting and starting over.](./Assets/04-web-apis-homework-demo.gif)
+### 4. High Score Table
 
-## Grading Requirements
+After completing the quiz, users are prompted to enter their name to be included in the high score table. The high score table showcases the top performers, displaying the names and scores of the top 5 participants. The table is updated dynamically and stored locally using the browser's local storage functionality.
 
-> **Note**: If a Challenge assignment submission is marked as “0”, it is considered incomplete and will not count towards your graduation requirements. Examples of incomplete submissions include the following:
->
-> * A repository that has no code
->
-> * A repository that includes a unique name but nothing else
->
-> * A repository that includes only a README file but nothing else
->
-> * A repository that only includes starter code
+### 5. Responsive Design
 
-This Challenge is graded based on the following criteria: 
+The website is designed to be responsive and adapt to different screen sizes and devices. It utilizes the Bootstrap framework to ensure a consistent and visually appealing layout across various devices.
 
-### Technical Acceptance Criteria: 40%
+## Usage
 
-* Satisfies all of the preceding acceptance criteria.
+To use the Quiz Website, follow these steps:
 
-### Deployment: 32%
+1. Launch the website in your preferred web browser.
+2. Read each question carefully.
+3. Select the most appropriate answer from the provided options.
+4. Click the "Submit" button to submit your answer.
+5. Receive instant feedback on whether your answer is correct or incorrect.
+6. Repeat steps 2 to 5 for each question in the quiz.
+7. After completing the quiz, enter your name when prompted to be included in the high score table.
+8. View the high score table to see the top performers.
 
-* Application deployed at live URL.
+## Technologies Used
 
-* Application loads with no errors.
+- HTML
+- CSS
+- JavaScript
+- Bootstrap
 
-* Application GitHub URL submitted.
+## Contributions
 
-* GitHub repository contains application code.
+Contributions to the Quiz Website are welcome! If you would like to contribute, please follow these steps:
 
-### Application Quality: 15%
+1. Fork the repository.
+2. Create a new branch for your feature: `git checkout -b feature-name`
+3. Make the necessary changes and commit them: `git commit -am 'Add feature'`
+4. Push your changes to the branch: `git push origin feature-name`
+5. Submit a pull request.
 
-* Application user experience is intuitive and easy to navigate.
+## License
 
-* Application user interface style is clean and polished.
+The Quiz Website is open source and available under the [MIT License](LICENSE).
 
-* Application resembles the mock-up functionality provided in the Challenge instructions.
+## Contact
 
-### Repository Quality: 13%
+For any inquiries or feedback, please contact [Mike Novachek](mailto:mike.novachek@gmail.com).
 
-* Repository has a unique name.
 
-* Repository follows best practices for file structure and naming conventions.
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages.
-
-* Repository contains quality readme file with description, screenshot, and link to deployed application.
-
-## Review
-
-You are required to submit BOTH of the following for review:
-
-* The URL of the functional, deployed application.
-
-* The URL of the GitHub repository, with a unique name and a readme describing the project.
-
----
-
-© 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
